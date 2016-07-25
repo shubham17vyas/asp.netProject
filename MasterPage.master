@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Src="~/CurrentUser.ascx" TagPrefix="uc1" TagName="CurrentUser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8"/>
+	<title>Yay&#39;Coffee Shop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+                        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="page">
+             <span class="current">
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Bold="true" ForeColor="Navy" Font-Size="Medium">
+        </asp:SiteMapPath></span>
+                           
+        <div>
+            		            
+                    <div id="header">
+                        <a href="Default.aspx">
+                        <img src="images/logo.png" alt="Image"/></a>
+				            <ul>
+                                <li class="current"><a href="Default.aspx">Home</a> </li>
+                                <li><a href="menu.aspx">Menu</a> </li>
+                                <li><a href="locations.aspx">Locations</a> </li>
+                                <li><a href="blog.aspx">Blog</a> </li>
+                                <li><a href="about.aspx">About Us</a> </li>
+                                <li><a href="Tips.aspx">Tips N Tricks</a> </li>
+                               
+                                
+                                <li>
+                                    <asp:LoginStatus ID="LoginStatus1" runat="server"
+                                 onloggedout="LoginStatus1_LoggedOut" />
+                                </li>
+                                <li id="AdminLabel" runat="server"></li>
+                                <li id="UserLabel" runat="server"></li>
+                                <h1><li id="WelcomeLabel" runat="server" style="color:navy; height: 55px;"></li></h1>
+                                                                   
+				            </ul>
+                        
+                    </div>
+                </div>
+            
+            
+         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+	           
+            <div>
+        		<div id="footer">
+				    <div>
+					<a href="Default.aspx"><img src="images/logo2.png" alt="Image"/></a>
+					<p class="footnote">
+						&copy; Shubham Vyas<br/>Satya Chippada<br/>Yay&#33;Coffee Shop 2015.<br/>All Rights Reserved.
+					</p>
+				</div>
+				    <div class="section">
+					<ul>
+						<li class="current">
+							<a href="Default.aspx">Home</a>
+						</li>
+						<li>
+							<a href="menu.aspx">Menu</a>
+						</li>
+						<li>
+							<a href="locations.aspx">Locations</a>
+						</li>
+						<li>
+							<a href="blog.aspx">Blog</a>
+						</li>
+                        <li>
+							<a href="Tips.aspx">Tips</a>
+						</li>
+						<li>
+							<a href="about.aspx">About Us</a>
+						</li>
+					</ul>
+					<div id="connect">
+						<a href="http://facebook.com/" target="_blank" id="facebook">Facebook</a>
+						<a href="http://twitter.com/" target="_blank" id="twitter">Twitter</a>
+						<a href="http://googleplus.com/" target="_blank" id="googleplus">Google+</a>
+						
+					</div>
+					<p>
+						This website has been designed by Shubham Vyas and Satya Chippada for you 
+                        <br />"Sit back and enjoy your Coffee" 
+					</p>
+				</div>
+			    </div>
+            </div>
+        
+        
+        </div>
+    
+    
+    </form>
+</body>
+</html>

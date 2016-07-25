@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Home"  description="">
+    <siteMapNode url="menu.aspx" title="Menu"  description=""/>
+    <siteMapNode url="ItemDetail.aspx" title="Item" />
+    <siteMapNode url="OrderSummary.Aspx" title="Order Details" />
+    <siteMapNode url="locations.aspx" title="Our Locations"  description="" />
+    <siteMapNode url="about.Aspx" title="About Us" />
+    <siteMapNode url="Admin.aspx" title="Menu Management" description=""/>
+    <siteMapNode url="blog.aspx" title="Blogs"  description="" />
+    <siteMapNode url="Blended.Aspx" title="Smoothies" />
+    <siteMapNode url="coffee.aspx" title="Coffees" description=""/>
+    <siteMapNode url="Login.aspx" title="Login"  description="" />
+    <siteMapNode url="CreateUser.Aspx" title="Register" />
+    <siteMapNode url="Espresso.aspx" title="Espresso" description=""/>
+    <siteMapNode url="ProfileInfo.aspx" title="Profile Information"  description="" />
+    <siteMapNode url="RecoverPassword.Aspx" title="Password Recovery" />
+    <siteMapNode url="Teas.aspx" title="Teas" description=""/>
+    <siteMapNode url="Tips.aspx" title="Tips n Tricks" description=""/>
+
+
+  </siteMapNode>
+</siteMap>
